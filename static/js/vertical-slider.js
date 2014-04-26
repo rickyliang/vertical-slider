@@ -50,22 +50,21 @@ function Slide(slider, slideSpeed, slideIOSpeed, delay) {
                                                                         // slideIn() and slideOut().            Default: 300
     
     // Declare class methods
-    this.startInterval = startInterval;
     this.toggleSlide = toggleSlide;
     this.toggleSwitch = toggleSwitch;
     this.slideOut = slideOut;
     this.slideIn = slideIn;
     this.resetPosition = resetPosition;
     
-    function startInterval() {
+    this.start = function startInterval() {
         // Reason for using a function with self:
         // http://www.aaronkjackson.com/2012/03/javascript-using-setinterval-within-an-object/
-        setInterval(function() { self.toggleSlide(); }, this.delay);
+        setInterval(function() { self.toggleSlide(); }, delay);
     }
     
     function toggleSlide() {
         if (toSlide) {
-            opened_slide.animate({ top: -(imgHeightDiff - 1)*100 + '%' }, this.slideSpeed);
+            opened_slide.animate({ top: -(imgHeightDiff - 1)*100 + '%' }, slideSpeed);
             toSlide = false;
         } else {
             this.toggleSwitch();
@@ -86,11 +85,11 @@ function Slide(slider, slideSpeed, slideIOSpeed, delay) {
     }
     
     function slideOut(el) {
-        el.animate({ top: '180%' }, this.slideIOSpeed); // Slides an image down and out the frame _% in _ms.
+        el.animate({ top: '180%' }, slideIOSpeed); // Slides an image down and out the frame _% in _ms.
     }
     
     function slideIn(el) {
-        el.animate({ top: '0' }, this.slideIOSpeed); // Slides an image down and in the frame _% in _ms.
+        el.animate({ top: '0' }, slideIOSpeed); // Slides an image down and in the frame _% in _ms.
     }
     
     function resetPosition(el) {
