@@ -13,7 +13,7 @@ jQuery
 
 Usage
 ---------------
-For a basic, no-fluff example, download and unzip the files and open index.html in your browser.
+For a basic, no-fluff example, [download](https://github.com/rickyliang/vertical-slider/archive/master.zip) and unzip the files and open index.html in your browser.
 
 To use the plug-in, structure your html such that there is a wrapper div with class "slider". Inside, have a *minimum* of 2 images. The first image must have the classes "vslide opened". The rest should just be "vslide". For example:
 
@@ -28,8 +28,8 @@ Somewhere in your html document, load jquery and vertical-slider.js, and initial
         <script type="text/javascript">
             $(document).ready(function() {
                 var slideSpeed = 3000,      // meant to show the arguments that Slide takes in.
-                    slideInOutSpeed = 600,  // creating a new Slide with just the DOM object passed in will automatically default to these values.
-                    delay = 6000,
+                    slideInOutSpeed = 600,  // creating a new Slide with just the DOM object passed
+                    delay = 6000,           //     in will automatically default to these values.
                     slider1 = new Slide($('#myFirstSliderWow'), slideSpeed, slideInOutSpeed, delay);
                 
                 slider1.start();
