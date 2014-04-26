@@ -36,8 +36,4 @@ Somewhere in your html document, load jquery and vertical-slider.js, and initial
             });
         </script>
 
-<<<<<<< HEAD
 As shown above, constructing a new Slide takes in four arguments. However, the latter three are optional and default to the values shown.
-=======
-As shown above, constructing a new Slide takes in four arguments. However, the latter three are optional and default to the values shown.
->>>>>>> fcf9e4563222d2c68f9366c4d9f9eebec2eb63b4
