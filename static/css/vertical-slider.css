@@ -1,0 +1,43 @@
+.container {
+    margin: 0 auto;
+    width: 960px;
+}
+
+.narrow-div {
+    height: 200px;
+    width: 200px;
+}
+
+.medium-div {
+    height: 250px;
+    width: 300px;
+}
+
+.wide-div {
+    height: 300px;
+    width: 400px;
+}
+
+
+
+/* Slide CSS */
+.slider {
+    overflow: hidden;
+    position: relative;
+}
+
+.slider img {
+    display: block;
+    height: 120%; /* If adjust, adjust this and .vslide */
+    left: -20%;
+    margin: auto;
+    position: absolute;
+}
+
+.vslide.opened {
+    top: 0;
+}
+
+.vslide {
+    top: -120%;
+}

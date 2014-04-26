@@ -1,0 +1,36 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <link href="static/css/vertical-slider.css" rel="stylesheet" type="text/css">
+    <script src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script src="static/js/vertical-slider.js"></script>
+</head>
+
+<body>
+    
+    <script type="text/javascript">
+        $(document).ready(function() {
+            var slider1 = new Slide($('#slider01'), 3000, 600, 6000),
+                slider2 = new Slide($('#slider02'), 4300, 600, 8600);
+            slider1.startInterval();
+            slider2.startInterval();
+        });
+    </script>
+    
+    <div class="container">
+        <div id="slider01" class="medium-div slider">
+            <img class="vslide opened" src="static/images/x.jpg">
+            <img class="vslide" src="static/images/xx.jpg">
+            <img class="vslide" src="static/images/xxx.jpg">
+        </div>
+        
+        <br>
+        
+        <div id="slider02" class="wide-div slider">
+            <img class="vslide opened" src="static/images/xxxx.jpg">
+            <img class="vslide" src="static/images/xxxxx.jpg">
+        </div>
+    </div>
+    
+</body>
+</html>
