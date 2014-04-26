@@ -28,12 +28,16 @@ Somewhere in your html document, load jquery and vertical-slider.js, and initial
         <script type="text/javascript">
             $(document).ready(function() {
                 var slideSpeed = 3000,      // meant to show the arguments that Slide takes in.
-                    slideInOutSpeed = 600,  // creating a new Slide with just the DOM object passed in will automatically default to these values.
-                    delay = 6000,
+                    slideInOutSpeed = 600,  // creating a new Slide with just the DOM object passed
+                    delay = 6000,           //     in will automatically default to these values.
                     slider1 = new Slide($('#myFirstSliderWow'), slideSpeed, slideInOutSpeed, delay);
                 
                 slider1.start();
             });
         </script>
 
+<<<<<<< HEAD
 As shown above, constructing a new Slide takes in four arguments. However, the latter three are optional and default to the values shown.
+=======
+As shown above, constructing a new Slide takes in four arguments. However, the latter three are optional and default to the values shown.
+>>>>>>> fcf9e4563222d2c68f9366c4d9f9eebec2eb63b4
