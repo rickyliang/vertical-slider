@@ -15,7 +15,7 @@ Usage
 ---------------
 For a basic, no-fluff example, [download](https://github.com/rickyliang/vertical-slider/archive/master.zip) and unzip the files and open index.html in your browser.
 
-To use the plug-in, structure your html such that there is a wrapper div with class "slider". Inside, have a *minimum* of 2 images. The first image must have the classes "vslide opened". The rest should just be "vslide". For example:
+To use the plug-in, structure your html such that there is a wrapper div with class "slider". Inside, have a **minimum** of 2 images. The first image must have the classes "vslide opened". The rest should just be "vslide". For example:
 
         <div id="myFirstSliderWow" class="slider">
             <img class="vslide opened" src="path/to/image.jpg">
@@ -23,7 +23,7 @@ To use the plug-in, structure your html such that there is a wrapper div with cl
             <img class="vslide" src="path/to/image3.jpg">
         </div>
         
-Somewhere in your html document, load jquery and vertical-slider.js, and initialize the slider. As shown below, constructing a new Slide takes in four arguments. However, the former three are optional and default to the values shown.
+Somewhere in your html document, load jquery and vertical-slider.js, and initialize the slider.
 
         <script type="text/javascript">
             $(document).ready(function() {
@@ -35,3 +35,5 @@ Somewhere in your html document, load jquery and vertical-slider.js, and initial
                 slider1.start();
             });
         </script>
+
+As shown above, constructing a new Slide takes in four arguments. However, the latter three are optional and default to the values shown.
